@@ -315,21 +315,14 @@ $.extend(mcrmade.infiniteScroll.prototype, {
 
 				if (!this.scrolled_over_element) {
 
-					debug.log('initial setting of scrolled_over_element');
-
 					this.scrolled_over_element = this.children.eq(i);
 				}
 
 				if (this.scrolled_over_element.get(0) !== this.children.eq(i).get(0)) {
 
-					debug.log('scrolled_over_element has changed');
-
 					this.scrolled_out_element = this.scrolled_over_element;
 
 					this.scrolled_over_element = this.children.eq(i);
-
-					debug.log(this.scrolled_out_element);
-					debug.log(this.scrolled_over_element);
 
 					if ('mouseout' in $._data(this.scrolled_out_element[0], 'events')) {
 
