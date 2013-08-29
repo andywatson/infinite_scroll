@@ -3,7 +3,7 @@
 // infinite scroll
 mcrmade = {};
 
-mcrmade.infiniteScroll = function(el, options) {
+mcrmade.infinite_scroll = function(el, options) {
 
 	if (el) {
 
@@ -11,10 +11,10 @@ mcrmade.infiniteScroll = function(el, options) {
 	}
 }
 
-$.extend(mcrmade.infiniteScroll.prototype, {
+$.extend(mcrmade.infinite_scroll.prototype, {
 
 	// plugin name
-	name: 'mcrmade_infiniteScroll',
+	name: 'mcrmade_infinite_scroll',
 
 	defaults: {
 	},
@@ -345,4 +345,4 @@ $.extend(mcrmade.infiniteScroll.prototype, {
 
 //
 // make plugin
-$.pluginMaker(mcrmade.infiniteScroll);
+$.pluginMaker(mcrmade.infinite_scroll);
