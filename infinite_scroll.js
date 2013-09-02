@@ -326,13 +326,11 @@ $.extend(mcrmade.infinite_scroll.prototype, {
 
 					if ('mouseout' in $._data(this.scrolled_out_element[0], 'events')) {
 
-						// debug.log('has mouseout event');
 						this.scrolled_out_element.trigger('mouseout');
 					}
 
 					if ('mouseover' in $._data(this.scrolled_out_element[0], 'events')) {
 
-						// debug.log('has mouseover event');
 						this.scrolled_over_element.trigger('mouseover');
 					}
 				}
